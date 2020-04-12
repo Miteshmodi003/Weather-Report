@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bf52ac46e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Report</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="container-fluid bg-dark text-center text-white">
+            <h1 class="pt-2 pb-2">Weather Dashboard</h1>
+        </header>
+    
+        <main class="mx-3">
+            <div class="row">
+                
+                    <div class="form-group col-md-2 col-sm-12">
+                        <label for="search-city"><strong> Search for a City:</strong></label>
+                        <div class="input-group mb-3">
+                            <input type="text" id="citySearch" class="form-control" placeholder="Search for a City" aria-label="search-city" aria-describedby="searchBtn">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary" type="submit" id="searchBtn"><i class="fas fa-search-location" style="color: whitesmoke;"></i></button>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="card" id="search-history">
+                            <ul class="list-group list-group-flush">
+                            </ul>
+                        </div>
+                    </div>
+                    
+                
+                
+                <div class="card col-md-9" id="weather-report-today">
+                    <div class="col-sm-4 mt-2">
+                        <h2 id="city-name">Enter City Name</h2>
+                        <p id="temperature">Temperature:</p>
+                        <p id="humidity">Humidity:</p>
+                        <p id="wind-speed">Wind Speed:</p>
+                        <p id="uv-index">UV Index:</p>
+                    </div>
+                    <div class="row ml-2 mb-2">
+                        <h3>5-Day Forecast:</h3>
+                    </div>
+                    <div class="row ml-2" id="forecast">
+                        <!-- <div class="col-md-2 card text-white bg-primary" style="max-width: 10rem;">
+
+                        </div>
+                        <div class="col-md-2 card text-white bg-primary" style="max-width: 10rem;margin-left: 10px">
+    
+                        </div>
+                        <div class="col-md-2 card text-white bg-primary" style="max-width: 10rem;margin-left: 10px">
+    
+                        </div>
+                        <div class="col-md-2 card text-white bg-primary" style="max-width: 10rem;margin-left: 10px">
+    
+                        </div>
+                        <div class="col-md-2 card text-white bg-primary" style="max-width: 10rem;margin-left: 10px">
+    
+                        </div> -->
+                    </div>
+                    
+
+                </div>
+                
+            </div>
+            
+        </main>    
+            
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
