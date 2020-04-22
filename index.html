@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/bf52ac46e9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Weather Report</title>
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
     <div class="container-fluid">
@@ -16,31 +17,28 @@
     
         <main class="mx-3">
             <div class="row">
-                
                     <div class="form-group col-md-2 col-sm-12">
                         <label for="search-city"><strong> Search for a City:</strong></label>
-                        <div class="input-group mb-3">
+                        <form class="input-group mb-3 cityinput">
                             <input type="text" id="citySearch" class="form-control" placeholder="Search for a City" aria-label="search-city" aria-describedby="searchBtn">
                             <div class="input-group-append">
                               <button class="btn btn-primary" type="submit" id="searchBtn"><i class="fas fa-search-location" style="color: whitesmoke;"></i></button>
                             </div>
-                        </div>
+                        </form>
                         <br>
-                        <div class="card" id="search-history">
-                            <ul class="list-group list-group-flush">
+                        <div class="card col-sm-12 d-none" id="search-history">
+                            <ul class="list-group list-group-flush" id="ullist">
                             </ul>
                         </div>
                     </div>
                     
-                
-                
-                <div class="card col-md-9" id="weather-report-today">
+                <div class="card col-md-9 col-sm-12" id="weather-report-today">
                     <div class="col-sm-4 mt-2">
-                        <h2 id="city-name">Enter City Name</h2>
-                        <p id="temperature">Temperature:</p>
-                        <p id="humidity">Humidity:</p>
-                        <p id="wind-speed">Wind Speed:</p>
-                        <p id="uv-index">UV Index:</p>
+                        <h2 id="city-name"></h2>
+                        <p id="temperature"></p>
+                        <p id="humidity"></p>
+                        <p id="wind-speed"></p>
+                        <p id="uv-index"></p>
                     </div>
                     <div class="row ml-2 mb-2">
                         <h3>5-Day Forecast:</h3>
