@@ -1,4 +1,5 @@
-<h1><a href="https://miteshmodi003.github.io/Weather-Report/"> Weather Report</a></h1>
+<h1><a href="https://miteshmodi003.github.io/Weather-Report/">Weather Report</a></h1>
+
 ![Image of Dashboard](./img-weather-dashboard.JPG)
 
 # Description
