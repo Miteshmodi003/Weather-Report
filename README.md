@@ -13,7 +13,7 @@ This goal of this assignment was to utilize OpenWeather APIs to make an applicat
 * Wind Speed
 * UV Index
 
-##**Forecast for the next 5 days:**
+## **Forecast for the next 5 days:**
 * Date
 * Icon
 * Temperature
