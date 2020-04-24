@@ -52,7 +52,7 @@ function displayCityWeather(cityName, addNewItem = true) {
 
             // API for UV Index 
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/uvi?appid=" + API_KEY + "&lat=" + lat + "&lon=" + lon,
+                url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + API_KEY + "&lat=" + lat + "&lon=" + lon,
                 method: "GET"
             }).then(function (result) {
                 uvIndex = result.value;
